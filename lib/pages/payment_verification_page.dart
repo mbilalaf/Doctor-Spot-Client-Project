@@ -24,7 +24,12 @@ class PaymentVerificationPage extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        leading: const Icon(Icons.arrow_back),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(Icons.arrow_back),
+        ),
         actions: const [
           ActionIcon(),
         ],

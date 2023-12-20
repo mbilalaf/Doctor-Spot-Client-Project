@@ -53,6 +53,7 @@ class ChangeLoctaion extends StatelessWidget {
               context: context,
               builder: (context) {
                 return const AlertDialog(
+                  surfaceTintColor: MyColors.white,
                   backgroundColor: MyColors.white,
                   content: MyDialogBox(
                     img: 'assets/images/location.png',

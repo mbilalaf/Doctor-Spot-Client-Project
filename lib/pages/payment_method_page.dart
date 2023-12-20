@@ -5,6 +5,7 @@ import 'package:doctor_spot/widgets/doctor_payment_card.dart';
 import 'package:doctor_spot/widgets/payment_card.dart';
 import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PaymentMethodPage extends StatelessWidget {
   const PaymentMethodPage({super.key});
@@ -22,7 +23,12 @@ class PaymentMethodPage extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        leading: const Icon(Icons.arrow_back),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(Icons.arrow_back),
+        ),
         actions: const [
           ActionIcon(),
         ],

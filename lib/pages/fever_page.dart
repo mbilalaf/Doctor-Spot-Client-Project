@@ -3,6 +3,7 @@ import 'package:doctor_spot/utils/font_style.dart';
 import 'package:doctor_spot/widgets/search_doctor_card.dart';
 import 'package:doctor_spot/widgets/text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class FeverPage extends StatelessWidget {
   const FeverPage({super.key});
@@ -20,7 +21,12 @@ class FeverPage extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        leading: const Icon(Icons.arrow_back),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: const Icon(Icons.arrow_back),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 22),
