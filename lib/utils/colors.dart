@@ -9,4 +9,5 @@ class MyColors {
   static const lightGray = Color(0xffFAFAFA);
   static const white = Color(0xffFFFFFF);
   static const black = Color(0xff333333);
+  static const black2 = Color(0xff606268);
 }

@@ -1,8 +1,10 @@
 import 'package:doctor_spot/models/fever_model.dart';
+import 'package:doctor_spot/pages/payment_verification_page.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SearchDoctorCard extends StatelessWidget {
   const SearchDoctorCard({super.key});
@@ -227,28 +229,33 @@ class SearchDoctorCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 24),
-                        Container(
-                          height: 31,
-                          width: 180,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(6),
-                            color: MyColors.blue,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Image(
-                                image: AssetImage('assets/icons/book.png'),
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                'Book Apointment',
-                                style: MyFontStyles.captionText.copyWith(
-                                  color: MyColors.white,
-                                  fontWeight: FontWeight.w700,
+                        InkWell(
+                          onTap: () {
+                            Get.to(const PaymentVerificationPage());
+                          },
+                          child: Container(
+                            height: 31,
+                            width: 180,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(6),
+                              color: MyColors.blue,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Image(
+                                  image: AssetImage('assets/icons/book.png'),
                                 ),
-                              ),
-                            ],
+                                const SizedBox(width: 8),
+                                Text(
+                                  'Book Apointment',
+                                  style: MyFontStyles.captionText.copyWith(
+                                    color: MyColors.white,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
