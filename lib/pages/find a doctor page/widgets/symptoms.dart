@@ -1,5 +1,5 @@
-import 'package:doctor_spot/models/disease_model.dart';
-import 'package:doctor_spot/pages/fever_page.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/models/disease_model.dart';
+import 'package:doctor_spot/pages/fever%20page/fever_page.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:flutter/material.dart';

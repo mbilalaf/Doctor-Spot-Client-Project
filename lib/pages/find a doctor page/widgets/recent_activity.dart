@@ -1,4 +1,4 @@
-import 'package:doctor_spot/models/recent_activity_model.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/models/recent_activity_model.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:flutter/material.dart';

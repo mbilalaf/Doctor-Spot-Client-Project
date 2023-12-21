@@ -1,14 +1,14 @@
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:doctor_spot/widgets/action_icon.dart';
-import 'package:doctor_spot/widgets/banner.dart';
-import 'package:doctor_spot/widgets/circular_avatar.dart';
-import 'package:doctor_spot/widgets/doctor_card.dart';
-import 'package:doctor_spot/widgets/location.dart';
-import 'package:doctor_spot/widgets/recent_activity.dart';
-import 'package:doctor_spot/widgets/symptoms.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/banner.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/top_disease.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/doctor_card.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/location.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/recent_activity.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/symptoms.dart';
 import 'package:doctor_spot/widgets/text_field.dart';
-import 'package:doctor_spot/widgets/top_speciallities.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/top_speciallities.dart';
 import 'package:flutter/material.dart';
 
 class MessagesPage extends StatelessWidget {

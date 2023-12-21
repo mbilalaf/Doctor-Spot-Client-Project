@@ -1,10 +1,10 @@
-import 'package:doctor_spot/pages/payment_method_page.dart';
+import 'package:doctor_spot/pages/payment%20method%20page/payment_method_page.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:doctor_spot/widgets/action_icon.dart';
 import 'package:doctor_spot/widgets/button.dart';
-import 'package:doctor_spot/widgets/info_container.dart';
-import 'package:doctor_spot/widgets/my_container.dart';
+import 'package:doctor_spot/pages/payment%20verfication%20page/widgets/info_container.dart';
+import 'package:doctor_spot/pages/payment%20verfication%20page/widgets/my_container.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

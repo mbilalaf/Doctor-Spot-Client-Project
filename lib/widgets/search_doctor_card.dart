@@ -1,5 +1,5 @@
-import 'package:doctor_spot/models/fever_model.dart';
-import 'package:doctor_spot/pages/payment_verification_page.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/models/fever_model.dart';
+import 'package:doctor_spot/pages/payment%20verfication%20page/payment_verification_page.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:dotted_decoration/dotted_decoration.dart';

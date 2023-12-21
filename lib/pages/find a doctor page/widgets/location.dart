@@ -1,6 +1,6 @@
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
-import 'package:doctor_spot/widgets/dialog_box.dart';
+import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/dialog_box.dart';
 import 'package:flutter/material.dart';
 
 class ChangeLoctaion extends StatelessWidget {

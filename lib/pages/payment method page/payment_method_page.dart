@@ -1,8 +1,8 @@
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:doctor_spot/widgets/action_icon.dart';
-import 'package:doctor_spot/widgets/doctor_payment_card.dart';
-import 'package:doctor_spot/widgets/payment_card.dart';
+import 'package:doctor_spot/pages/payment%20method%20page/widgets/doctor_payment_card.dart';
+import 'package:doctor_spot/pages/payment%20method%20page/widgets/payment_card.dart';
 import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
