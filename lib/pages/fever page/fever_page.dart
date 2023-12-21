@@ -37,8 +37,12 @@ class FeverPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(22),
                 color: MyColors.lightGrey,
               ),
-              child: const Image(
-                image: AssetImage('assets/icons/filter.png'),
+              child: const FractionallySizedBox(
+                heightFactor: 0.42,
+                widthFactor: 0.42,
+                child: Image(
+                  image: AssetImage('assets/icons/filter.png'),
+                ),
               ),
             ),
           ),

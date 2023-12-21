@@ -25,9 +25,14 @@ class ActionIcon extends StatelessWidget {
             borderRadius: BorderRadius.circular(22),
             color: MyColors.green,
           ),
-          child: const Image(
-            image: AssetImage(
-              'assets/icons/doc.png',
+          child: const FractionallySizedBox(
+            heightFactor: 1,
+            widthFactor: 0.625,
+            child: Image(
+              fit: BoxFit.contain,
+              image: AssetImage(
+                'assets/icons/doc.png',
+              ),
             ),
           ),
         ),

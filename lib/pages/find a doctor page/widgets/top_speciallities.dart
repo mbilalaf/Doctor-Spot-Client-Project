@@ -25,9 +25,13 @@ class TopSpeciallities extends StatelessWidget {
                     color: specialitiesList[index].color,
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  child: Image(
-                    image: AssetImage(
-                      specialitiesList[index].img,
+                  child: FractionallySizedBox(
+                    heightFactor: 0.33,
+                    widthFactor: 0.33,
+                    child: Image(
+                      image: AssetImage(
+                        specialitiesList[index].img,
+                      ),
                     ),
                   ),
                 ),

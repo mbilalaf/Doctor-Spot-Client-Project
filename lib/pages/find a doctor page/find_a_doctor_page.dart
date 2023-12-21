@@ -1,15 +1,17 @@
+import 'package:doctor_spot/pages/hospital%20profile%20page/hospital_profile_page.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:doctor_spot/widgets/action_icon.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/banner.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/top_disease.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/doctor_card.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/location.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/recent_activity.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/symptoms.dart';
 import 'package:doctor_spot/widgets/text_field.dart';
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/widgets/top_speciallities.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'widgets/banner.dart';
+import 'widgets/doctor_card.dart';
+import 'widgets/location.dart';
+import 'widgets/recent_activity.dart';
+import 'widgets/symptoms.dart';
+import 'widgets/top_disease.dart';
+import 'widgets/top_speciallities.dart';
 
 class FindADoctorPage extends StatelessWidget {
   const FindADoctorPage({super.key});
@@ -32,11 +34,11 @@ class FindADoctorPage extends StatelessWidget {
           ActionIcon(),
         ],
       ),
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 240,
               child: Stack(
                 children: [
@@ -52,7 +54,7 @@ class FindADoctorPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 right: 16,
                 left: 16,
                 bottom: 40,
@@ -60,16 +62,21 @@ class FindADoctorPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ChangeLoctaion(),
-                  SizedBox(height: 24),
-                  Text(
-                    "Recent Activities",
-                    style: MyFontStyles.headingH2,
+                  const ChangeLoctaion(),
+                  const SizedBox(height: 24),
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(const HospitalProfilePage());
+                    },
+                    child: const Text(
+                      "Recent Activities",
+                      style: MyFontStyles.headingH2,
+                    ),
                   ),
-                  SizedBox(height: 16),
-                  RecentActivity(),
-                  SizedBox(height: 24),
-                  Row(
+                  const SizedBox(height: 16),
+                  const RecentActivity(),
+                  const SizedBox(height: 24),
+                  const Row(
                     children: [
                       Text(
                         "Common Symptoms",
@@ -81,30 +88,30 @@ class FindADoctorPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 16),
-                  Symptoms(),
-                  SizedBox(height: 24),
-                  Text(
+                  const SizedBox(height: 16),
+                  const Symptoms(),
+                  const SizedBox(height: 24),
+                  const Text(
                     "Top Disease",
                     style: MyFontStyles.headingH2,
                   ),
-                  SizedBox(height: 16),
-                  TopDisease(),
-                  SizedBox(height: 24),
-                  SizedBox(height: 24),
-                  Text(
+                  const SizedBox(height: 16),
+                  const TopDisease(),
+                  const SizedBox(height: 24),
+                  const SizedBox(height: 24),
+                  const Text(
                     "Top Specialties",
                     style: MyFontStyles.headingH2,
                   ),
-                  SizedBox(height: 16),
-                  TopSpeciallities(),
-                  SizedBox(height: 24),
-                  Text(
+                  const SizedBox(height: 16),
+                  const TopSpeciallities(),
+                  const SizedBox(height: 24),
+                  const Text(
                     "Top Doctors",
                     style: MyFontStyles.headingH2,
                   ),
-                  SizedBox(height: 16),
-                  DoctorCard(),
+                  const SizedBox(height: 16),
+                  const DoctorCard(),
                 ],
               ),
             ),

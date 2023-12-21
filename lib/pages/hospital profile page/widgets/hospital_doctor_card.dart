@@ -6,14 +6,15 @@ import 'package:dotted_decoration/dotted_decoration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SearchDoctorCard extends StatelessWidget {
-  const SearchDoctorCard({super.key});
+class HospitalDoctorCard extends StatelessWidget {
+  const HospitalDoctorCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
         itemCount: feverList.length,
+        shrinkWrap: true,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(bottom: 24),
@@ -55,13 +56,11 @@ class SearchDoctorCard extends StatelessWidget {
                                 alignment: Alignment.center,
                                 children: [
                                   Image(
-                                    height: 12,
                                     image: AssetImage(
                                       'assets/icons/verified.png',
                                     ),
                                   ),
                                   Image(
-                                    height: 6,
                                     image: AssetImage(
                                       'assets/icons/tick.png',
                                     ),
@@ -246,7 +245,6 @@ class SearchDoctorCard extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 const Image(
-                                  height: 14,
                                   image: AssetImage('assets/icons/book.png'),
                                 ),
                                 const SizedBox(width: 8),
@@ -275,8 +273,6 @@ class SearchDoctorCard extends StatelessWidget {
 }
 
 List<FeverModel> feverList = [
-  FeverModel(img: 'assets/images/rodger.png', name: 'Dr. Rodger Struck'),
-  FeverModel(img: 'assets/images/dr-sadaf.png', name: 'Dr. Sadaf Amin'),
   FeverModel(img: 'assets/images/rodger.png', name: 'Dr. Rodger Struck'),
   FeverModel(img: 'assets/images/dr-sadaf.png', name: 'Dr. Sadaf Amin'),
 ];

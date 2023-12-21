@@ -1,7 +1,7 @@
-import 'package:doctor_spot/pages/find%20a%20doctor%20page/models/recent_activity_model.dart';
 import 'package:doctor_spot/utils/colors.dart';
 import 'package:doctor_spot/utils/font_style.dart';
 import 'package:flutter/material.dart';
+import '../models/recent_activity_model.dart';
 
 class RecentActivity extends StatelessWidget {
   const RecentActivity({super.key});
